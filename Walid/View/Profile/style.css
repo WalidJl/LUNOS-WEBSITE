@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(1.jpg) no-repeat;
+  background-size: cover;
+}
+/*NAVBAR*/
+.LOGO_NAVBAR
+{
+    position:relative;
+    top: 0;
+    /*z-index: 100;*/
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Roboto";
+    background-color: transparent;
+}
+.logo img
+{
+    width: 200px;
+    height: 70px;
+    border-radius: 90px;
+    opacity: 60%;
+}
+
+.nav_bar ul 
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    transition : all 0.4s ease;
+    
+}
+.nav_bar ul li 
+{
+    margin-left: 15px;
+    padding: 0 5px;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+    transition : all 0.4s ease;
+}
+.nav_bar ul li a
+{
+    text-decoration: none;
+    padding: 6px 20px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.nav_bar ul li a:hover,
+.nav_bar ul li a.profile
+{
+background: #fff;
+color: #2b1055;
+transition : all 0.4s ease;
+}
+
+
+/******************************************/
+.box{
+  width: 550px;
+  height: fit-content;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1%;
+  color: white;
+  font-family: 'Century Gothic',sans-serif;
+}
+
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.output_box 
+{
+    width: calc(100%/2 - 20px);
+    margin-bottom: 2px;
+    margin-left: 0px;
+    margin-top: 2%;
+}
+.output_box input
+{ 
+    height: 27px;
+    width: 200%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 15px;
+    border-width: 2px;
+    transition: all 0.3s ease;
+}
+.NAME
+{
+    margin-left: 230px;
+    font-size: 20px;
+}
+
+/*UPDATE*/
+.button input {
+  display:block;
+  width:94%;
+  margin-top:1rem;
+  background:#BD5C3C;
+  color:white;
+  font-weight: 700;
+  border:none;
+  padding: 1rem;
+  border-radius:8px;
+  font-size:0.75rem;
+  text-transform: uppercase;
+  letter-spacing:0.5px;
+  transition: 1s;
+}
+.button input:hover {
+  background:#E07D48;
+ 
+  transition: 0.5s;
+  box-shadow:0 0 0 2px #CC8F35, 0 0 2px #D44539;
+  cursor:pointer;
+}
+
+
+.profile-pic {
+  width: 400px;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 500px;
+}
