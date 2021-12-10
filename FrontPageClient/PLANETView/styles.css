@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+ body {  display:flex;  justify-content: center; align-items: center; min-height: 100vh; overflow: hidden; } 
+ ul { position: relative; } ul li { list-style: none; text-align: center; } 
+ ul li a { color: #333; text-decoration: none; font-size: 3em; padding: 5px 20px; display: inline-flex; font-weight: 700; transition: 0.5s; } 
+ ul:hover li a { color: #0002; } ul li:hover a { color: #000; background: rgba(255,255,255,1); }
+  ul li a:before { content: ''; position: absolute; top: 50%; left: 40%; transform: translate(-50%,-50%); display: flex; justify-content: center; align-items: center; font-size: 5em; color: rgba(0,0,0,.1); border-radius: 50%; z-index: -1; opacity: 0; font-weight: 900; text-transform: uppercase; letter-spacing: 500px; transition: letter-spacing 0.5s,left 0.5s; } 
+  ul li a:hover:before { content: attr(data-text); opacity: 1; left: 50%; letter-spacing: 10px; width: 1800px; height: 1800px; } 
+  ul li:nth-child(6n+1) 
+  a:before {
+       background:url(images/111.jpg);
+       background-size:cover;
+         } 
+  ul li:nth-child(6n+2) 
+  a:before { 
+    background:url(images/75.jpg);
+    background-size:cover;
+    } 
+  ul li:nth-child(6n+3) 
+  a:before { 
+    background:url(images/44.jpg);
+    background-size:cover;
+    } 
+  ul li:nth-child(6n+4) 
+  a:before { 
+    background:url(images/55.jpg);
+    background-size:cover;
+    }
+   ul li:nth-child(6n+5) 
+   a:before { 
+    background:url(images/77.jpg);
+    background-size:cover;
+    }
+    ul li:nth-child(6n+6) 
+    a:before { 
+        background:url(images/89.jpg);
+        background-size:cover;
+     }
+
+     
+  
+  .outer {
+    position:absolute;
+    top:1px;
+    left:0%;
+    margin: auto;
+    width: 70px;
+    margin-top: 200px;
+    cursor: pointer;
+    }
+    
+    .inner {
+    width: inherit;
+    text-align: center;
+    }
+    
+    label { 
+    font-size: .8em; 
+    line-height: 4em;
+    text-transform: uppercase;
+    color: #000;
+    transition: all .3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+    }
+    
+    .inner:before, .inner:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: inherit;
+    background: #000;
+    left: 0;
+    transition: all .3s ease-in;
+    }
+    
+    .inner:before {
+    top: 50%; 
+    transform: rotate(45deg);  
+    }
+    
+    .inner:after {  
+    bottom: 50%;
+    transform: rotate(-45deg);  
+    }
+    
+    .outer:hover label {
+    opacity: 1;
+    }
+    
+    .outer:hover .inner:before,
+    .outer:hover .inner:after {
+    transform: rotate(0);
+    }
+    
+    .outer:hover .inner:before {
+    top: 0;
+    }
+    
+    .outer:hover .inner:after {
+    bottom: 0;
+    }
+
+     

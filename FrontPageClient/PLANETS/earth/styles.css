@@ -1,0 +1,344 @@
+*
+{margin: 0px;
+padding: 0px;
+text-decoration: none;}
+body
+{
+  background: url(22.jpg);
+  background-size: cover;
+  font: 400 16px 'Poppins', sans-serif;
+}
+#sectiontwo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .ALL
+  {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top:160px;
+  }
+  .swiper-slide
+  {
+      color:white;
+  }
+  .swiper-slide .slide-name h1 
+  {
+      font-size: 50px;
+  }
+
+  .slide-detail p
+  {  
+    font-size: 26px;
+    position: relative;
+    opacity: 0.8;
+    line-height: 30px;
+  }
+  .earth_control
+  {
+      position:absolute;
+      top:520px;
+      left:390px;
+  }
+  .earth_control button
+  {
+    background:linear-gradient(135deg ,#71b7e6 , #47c558);
+      margin-right: 25px;
+      height: 60px;
+      width: 120px;
+  }
+  .earth_control button:hover
+  {
+    background:linear-gradient(-135deg ,#71b7e6 , #47c558);
+  }
+  .buttons
+  {
+    color:white;
+    font-size: 20px;
+  }
+  /*PAGE LINKS*/
+  .links
+  {
+      position: absolute; 
+      top: 640px;
+      left: 400px;
+    }
+  .links button
+  {
+      margin-left: 180px;
+    background:linear-gradient(135deg ,#71b7e6 , #47c558);
+    height: 60px;
+      width: 120px;
+  }
+  .links button:hover
+  {
+    background:linear-gradient(-135deg ,#71b7e6 , #47c558);
+  }
+  .link_button
+  {
+    color: white;
+    font-size: 20px;
+  }
+
+
+  .wrapper {
+    --color: #fff;
+    --color-invert: #ffffff;
+    --clip-path: circle(15px at left);
+    --clip-path-hover: circle(70px at left);
+    --clip-path-clicked: circle(100vw at left);
+    --duration: 0.4s;
+    --timing-function: ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position:absolute;
+    top:100px;
+    }
+    .wrapper .video {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+    }
+    .wrapper .video video {
+    position: fixed;
+    background: #c4cbde;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    }
+    .wrapper .text {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    opacity: var(--opacity, 1);
+    transition: opacity 0.3s var(--timing-function) 0.2s;
+    }
+    .wrapper .text::before, .wrapper .text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: 25px;
+    height: 0;
+    }
+    .wrapper .text::before {
+    box-shadow: 26px 0 0 1px var(--color);
+    right: var(--r, 100%);
+    opacity: var(--opacity, 0);
+    transition: right 0.5s ease-in, opacity 0.1s linear;
+    }
+    .wrapper .text::after {
+    box-shadow: 26px 0 0 1px var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+    }
+    .wrapper .text > span::before, .wrapper .text > span::after {
+    content: attr(data-text);
+    padding-left: 26px;
+    }
+    .wrapper .text > span::before {
+    color: var(--color);
+    }
+    .wrapper .text > span::after {
+    color: var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+    position: absolute;
+    left: 0;
+    }
+    .wrapper input {
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    outline: none;
+    z-index: 2;
+    appearance: none;
+    cursor: pointer;
+    }
+    .wrapper input:focus {
+    outline: 0;
+    }
+    .wrapper input:hover ~ .video {
+    clip-path: var(--clip-path-hover);
+    }
+    .wrapper input:hover ~ .text::before {
+    --r: 25px;
+    --opacity: 1;
+    }
+    .wrapper input:hover ~ .text::after {
+    clip-path: var(--clip-path-hover);
+    }
+    .wrapper input:hover ~ .text > span::after {
+    clip-path: var(--clip-path-hover);
+    }
+    .wrapper input:checked {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    }
+    .wrapper input:checked ~ .video {
+    clip-path: var(--clip-path-clicked);
+    }
+    .wrapper input:checked ~ .text {
+    --opacity: 0;
+    transition: opacity 0.3s var(--timing-function);
+    }
+    .wrapper input:checked ~ .text::after {
+    clip-path: var(--clip-path-clicked);
+    }
+    .wrapper input:checked ~ .text > span::after {
+    clip-path: var(--clip-path-clicked);
+    }
+    
+    body .socials {
+    position: fixed;
+    display: block;
+    left: 20px;
+    bottom: 20px;
+    
+    }
+    body .socials > a {
+    display: block;
+    width: 30px;
+    opacity: 0.2;
+    transform: scale(var(--scale, 0.8));
+    transition: transform 0.3s cubic-bezier(0.38, -0.12, 0.24, 1.91);
+    }
+    body .socials > a:hover {
+    --scale: 1;
+    }
+    
+
+  
+
+
+
+
+
+
+
+
+
+    /**************************/
+    div a {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      margin-top: -50px;
+      margin-right: -50px;
+      background-color: #fff;
+      border-radius: 50px;
+      opacity: 1;
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-box-shadow: 0px 0px 30px 0px rgba(247, 149, 29, 0.5);
+      -moz-box-shadow: 0px 0px 30px 0px rgba(247, 149, 29, 0.5);
+      box-shadow: 0px 0px 30px 0px rgba(247, 149, 29, 0.5);
+    }
+    div a > span {
+      background-color: #f5a700;
+      display: block;
+      height: 12px;
+      border-radius: 6px;
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      position: absolute;
+      top: 50%;
+      margin-top: -6px;
+      left: 18px;
+      width: 64px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+    }
+    div a > span span {
+      display: block;
+      background-color: #ed7f00;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    div a > span.left {
+      transform: rotate(45deg);
+      transform-origin: center;
+    }
+    div a > span.left .circle-left {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 0;
+    }
+    div a > span.left .circle-right {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 52px;
+    }
+    div a > span.right {
+      transform: rotate(-45deg);
+      transform-origin: center;
+    }
+    div a > span.right .circle-left {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 0;
+    }
+    div a > span.right .circle-right {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 52px;
+    }
+    div a:hover > span {
+      background-color: #2faee0;
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    div a:hover > span span {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      background-color: #008ac9;
+    }
+    div a:hover > span.left .circle-left {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 52px;
+    }
+    div a:hover > span.left .circle-right {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 0;
+    }
+    div a:hover > span.right .circle-left {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 52px;
+    }
+    div a:hover > span.right .circle-right {
+      transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      margin-left: 0;
+    }
+.backbut
+{
+  position:absolute;
+  left: 60px;
+  top:60px;
+}    
