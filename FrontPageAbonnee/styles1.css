@@ -1,0 +1,192 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-style: "Roboto";
+    list-style: none;
+    box-sizing:border-box ;
+    background-color: black;
+    text-decoration: none;    
+}
+.loader_bg
+{
+    background: black url(Images/loader.gif) no-repeat center center ;
+    height: 100vh;
+    width: 100%;
+    position: fixed ;
+    z-index: 100;
+}
+.LOGO_NAVBAR
+{
+    position:sticky;
+    top: 0;
+    /*z-index: 100;*/
+    height: 8vh;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: "Roboto";
+    background-color: transparent;
+}
+.logo img
+{
+    width: 200px;
+}
+
+.nav_bar ul 
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    
+}
+.nav_bar ul li 
+{
+    margin-left: 15px;
+    padding: 0 5px;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar ul li a
+{
+    text-decoration: none;
+    padding: 6px 20px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.nav_bar ul li a:hover,
+.nav_bar ul li a.home
+{
+background: #fff;
+color: #2b1055;
+transition : all 0.4s ease;
+}
+
+.screen
+{
+    height: 100vh;
+    overflow: hidden;
+}
+.bg img
+{
+    width: 110vw;
+    height: 110vh;
+    filter:brightness(0.6);
+}
+.rock1
+{
+    position: absolute !important;
+    left: 10vw !important;
+    top: 20vh !important;
+}
+.rock1
+{
+    width: 40%;
+    filter : brightness(0.5);
+}
+.text h1
+{
+    font-family: "AlphaCentauri" !important;
+    font-size: 5vw;
+    color: white;
+    letter-spacing: 20px;
+    position: absolute;
+    top : 35vh;
+    left: 34vw;
+}
+.earth img
+{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 34vw;
+    top:25vh;
+    z-index: 1;
+    filter: brightness(0.7);
+}
+.mid
+{
+    left: -150px !important;
+    bottom: -100px !important;
+    top:unset !important;
+}
+.mid img 
+{
+    width: 100%;
+    z-index: 2;
+    left: -20px;
+    top: 20vh !important;
+    filter: brightness(0.8);
+}
+.for
+{
+    right: -50px !important;
+    bottom: -200px !important;
+    top:0px !important;
+    left: unset !important;
+}
+.for img
+{
+    width: 400px;
+    height: 110vh;
+    z-index: 3;
+    filter: brightness(0.5);
+}
+/***/
+/*
+#sectiontwo {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .ALL
+  {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top:160px;
+  }
+  .swiper-slide
+  {
+      color:white;
+  }
+  .swiper-slide .slide-name h1 
+  {
+      font-size: 50px;
+  }
+
+  .slide-detail p
+  {  
+    font-size: 26px;
+    position: relative;
+    opacity: 0.8;
+    line-height: 30px;
+  }
+  .earth_control
+  {
+      position:absolute;
+      top:620px;
+      left:390px;
+  }
+  .earth_control button
+  {
+    background:linear-gradient(135deg ,#71b7e6 , #47c558);
+      margin-right: 25px;
+      height: 60px;
+      width: 120px;
+  }
+  .earth_control button:hover
+  {
+    background:linear-gradient(-135deg ,#71b7e6 , #47c558);
+  }
+  .buttons
+  {
+      color:white;
+    font-size: 20px;
+  }
+*/
+
