@@ -3,14 +3,14 @@
 	
 	//sup
 	$Event=new EventsC();
-	$listeEvent=$Event->afficherEvents(); 
+	$listeEvent=$Event->tri(); 
 	$par=new EventsC();
 	$listepart=$par->afficherpartip(); 
 	if (isset($_GET['id']))
 	{
 		$s=new EventsC();
 		$s->SuppEvents( (int)$_GET['id']);
-		header("Location:index.php");
+		header("Location: index.php");
 	}
 ?>
 <html>
@@ -37,7 +37,7 @@
 		
 		<br><br><br>
 		<center><h1>Liste des Evenements</h1></center>
-		<a href="tri.php" >Tri par rapport au nom </a>
+        <a href="index.php" >Retoure </a>
 		<table border="1" align="right" class="f1-table">
 			<tr>
 				<th>Id</th>
@@ -182,7 +182,7 @@ $b=strtotime($s);
 
 
 
-		<div class="Bb">
+		<div class="backbu">
 				 <form method="POST" action="stat.php">
                                         
                     <button type="submit"  id="statistique"  class="btn btn-info" href="stat.php"> statistique</button>
@@ -192,13 +192,7 @@ $b=strtotime($s);
 										
 		</div>
 
-		<div class="backbu">
-				<a href="../../../WEB/back/Views/BACKFRONT/index.php" class="btn">
-					<span class="text">Text</span>
-					<span class="flip-front">Go Back</span>
-					<span class="flip-back">Back</span>
-				</a>
-		</div>
+		
 
 	</body>
 

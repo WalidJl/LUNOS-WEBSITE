@@ -16,7 +16,7 @@
       justify-content: center;
       align-items: center;
       padding: 20px;
-      background: url(1.jpg);  
+      background: url(b.jpg);  
       background-size: cover;    
       }
       h1 {
@@ -36,7 +36,7 @@
       width: 50px;
       height: 20px;
       border-radius: 20px;
-      background: #5c2b23;
+      background: #5a7233;
       }
       .form-left-decoration {
       bottom: 60px;
@@ -104,96 +104,16 @@
       border-radius: 20px;
       border: none;
       border-bottom: 4px solid #3e4f24;
-      background: #723c33; 
+      background: #5a7233; 
       font-size: 16px;
       font-weight: 400;
       color: #fff;
       }
       button:hover {
-      background: #5c2b23;
+      background: #3e4f24;
       } 
       @media (min-width: 568px) {
       form {
       width: 60%;
       }
       }
-
-      
-.close {
-	width: 60px;
-	height: 60px;
-	position:absolute;
-      left: 2px;
-      top:2px;
-	background: #5c2b23;
-	border-radius: 50%;
-	box-shadow: 0 0 20px -5px rgba(255, 255, 255, .5);
-	transition: 0.25s ease-in-out;
-	cursor: pointer;
-	animation: fade-in 0.5s ease-out 0.25s both;
-      
-}
-@keyframes fade-in {
-	from {
-		opacity: 0;
-		transform: scale(1.1);
-   }
-}
-.close .circle path {
-	stroke: rgba(255, 255, 255, 1);
-	fill: none;
-	stroke-width: 1px;
-	stroke-linecap: round;
-	animation: progress 0.5s ease-out 0.25s both;
-}
-@keyframes progress {
-	from {
-		stroke-dasharray: 0 100;
-   }
-}
-.close span {
-	display: block;
-	width: 13px;
-	height: 2px;
-	background: rgba(255, 255, 255, 1);
-	box-shadow: 0 0 20px -5px rgba(255, 255, 255, .5);
-	border-radius: 20px;
-	position: absolute;
-	transition: 0.25s ease-in-out;
-	animation: slide-in 0.5s ease-in-out 0.25s both;
-}
-@keyframes slide-in {
-	from {
-		width: 0;
-   }
-}
-.close span:nth-child(1) {
-	top: 19px;
-	left: 20px;
-	transform: rotate(45deg);
-	transform-origin: top left;
-}
-.close span:nth-child(2) {
-	top: 19px;
-	right: 20px;
-	transform: rotate(-45deg);
-	transform-origin: top right;
-}
-.close span:nth-child(3) {
-	bottom: 19px;
-	left: 20px;
-	transform: rotate(-45deg);
-	transform-origin: bottom left;
-}
-.close span:nth-child(4) {
-	bottom: 19px;
-	right: 20px;
-	transform: rotate(45deg);
-	transform-origin: bottom right;
-}
-.close:hover {
-	background: #37474f;
-}
-.close:hover span {
-	width: 15px;
-}
